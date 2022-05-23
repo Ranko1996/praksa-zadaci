@@ -8,7 +8,16 @@
 */
 
 //----------------RJEŠENJE ZADATAKA ------------
-
+function repeater(str, num){
+  let arr = []
+  let i = 0;
+  do{
+    arr.push(str)
+    i++
+  }
+  while(i < num)
+  return arr.join("")
+}
 
 
 

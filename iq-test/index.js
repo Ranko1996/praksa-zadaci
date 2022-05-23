@@ -17,7 +17,28 @@
 
 //----------------RJEŠENJE ZADATAKA ------------
 
+function iqTest(numbers){
+  let numArr = numbers.split(" ");
+  let obj = {}
+  obj.evenCount = 0;
+  obj.oddCount = 0;
+  
+  for(let i = 0; i < numArr.length; i++){
+    if(numArr[i] % 2 === 0){
+      obj.evenCount += 1;
+      obj.even = i + 1;
+    } else {
+      obj.oddCount += 1;
+      obj.odd = i + 1;
+    }
+  }
 
+  if(obj.evenCount < obj.oddCount) {
+    return obj.even
+  } else {
+    return obj.odd
+  }
+}
 
 
 

@@ -12,7 +12,14 @@
 
 //----------------RJEŠENJE ZADATAKA ------------
 
-
+function sumDigits(n) {
+  let positiveNum = Math.abs(n)
+  let positives = positiveNum.toString().split("")
+  let sum = positives.reduce(function(a, b){
+    return parseInt(a) + parseInt(b)
+  },0)
+  return sum
+}
 
 
 
